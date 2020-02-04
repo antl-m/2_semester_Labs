@@ -21,6 +21,15 @@
     <ClCompile Include="bin_work.cpp">
       <Filter>Header Files</Filter>
     </ClCompile>
+    <ClCompile Include="txt_work.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="menu.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="other.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="file_work.h">

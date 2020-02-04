@@ -1,5 +1,3 @@
-#include <iostream>
-#include <sstream>
 #include "file_work.h"
 
 using namespace std;
@@ -24,7 +22,10 @@ struct tovar
 
 int main()
 {
-	const char* file = "C:/Users/Antl_M/source/repos/Lab_1_2020_Malibroda/Lab_1_2020_Malibroda/database.txt";
-	FILE *f;
+	//const char* file = "C:/Users/Antl_M/source/repos/Lab_1_2020_Malibroda/Lab_1_2020_Malibroda/database.txt";
+	//FILE *f;
+	
+	start_inter();
+
 	return 0;
 }
