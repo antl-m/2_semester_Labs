@@ -3,6 +3,7 @@
 #include <sstream>
 #include <conio.h>
 #include <vector>
+#include <Windows.h>
 
 using namespace std;
 
@@ -19,7 +20,7 @@ struct tovar
 {
 	tovar()
 	{
-		for (int i = 0; i < 40; ++i)
+		for (int i = 0; i < 40; i++)
 		{
 			name[i] = '\0';
 			mira[i] = '\0';
@@ -48,12 +49,12 @@ struct shop
 {
 	shop()
 	{
-		for (int i = 0; i < 40; ++i)
+		for (int i = 0; i < 40; i++)
 		{
 			name[i] = '\0';
 			adress[i] = '\0';
 		}
-		for (int i = 40; i < 80; ++i)
+		for (int i = 40; i < 80; i++)
 		{
 			adress[i] = '\0';
 		}
@@ -96,6 +97,7 @@ void search_menu(vector<tovar>& list);
 bool part_in_word(char part[40], char word[40]);
 void delete_menu(vector<tovar>& list);
 void edit_menu(vector<tovar>& list);
+void demo_mode(vector<tovar>& list);
 
 int main()
 {
@@ -110,7 +112,7 @@ void txt_save(vector<tovar>& list)
 	FILE* f = fopen("database.txt", "w");
 	if (list.size() == 0) cout << "List is empty..." << endl;
 	else {
-		for (int i = 0; i < list.size(); ++i)
+		for (int i = 0; i < list.size(); i++)
 		{
 			fprintf(f, "%i\t%s\t%f\t%s\t%d.%d.%d\t%d:%d\t%d\t%d\n", list[i].id, list[i].name,
 				list[i].count, list[i].mira, list[i].made.day, list[i].made.month, list[i].made.year,
@@ -126,7 +128,7 @@ void bin_save(vector<tovar>& list)
 	FILE* f = fopen("database.bin", "wb");
 	int count = 0;
 	if (list.size() == 0) cout << "List is empty..." << endl;
-	else for (int i = 0; i < list.size(); ++i)
+	else for (int i = 0; i < list.size(); i++)
 	{
 		count += fwrite(&list[i], sizeof(tovar), 1, f);
 	}
@@ -139,7 +141,7 @@ void bin_save(vector<tovar>& list)
 void auto_add(vector<tovar>& list)
 {
 	tovar elem;
-	for (int i = 0; i < 10; ++i)
+	for (int i = 0; i < 10; i++)
 	{
 		elem.name[i] = 97 + rand() % 26;
 		elem.mira[i] = 97 + rand() % 26;
@@ -164,7 +166,7 @@ void num_add(vector<tovar>& list)
 	cin.ignore(INT64_MAX, '\n');
 	if ((int)count <= 0) cout << "Bad number(\n";
 	else {
-		for (int i = 0; i < count; ++i) auto_add(list);
+		for (int i = 0; i < count; i++) auto_add(list);
 		cout << count << " elements successfuly added)\n";
 	}
 	return add_menu_auto(list);
@@ -349,12 +351,315 @@ void start_demo(vector<tovar>& list)
 
 		}
 		else if (key == 13) {
-			//system("CLS");demo_menu();
+			system("CLS"); return demo_mode(list);
 		}
 		else if (key == 27) {
 			return;
 		}
 	}
+}
+
+void demo_mode(vector<tovar>& list)
+{
+	system("CLS");
+	list.clear();
+	cout << "1.Add\t<<<" << endl;
+	cout << "2.Save" << endl;
+	cout << "3.Read" << endl;
+	cout << "4.Show" << endl;
+	cout << "5.Search" << endl;
+	cout << "6.Edit" << endl;
+	cout << "7.Delete" << endl;
+	Sleep(500);
+	system("CLS");
+	cout << "1.Automatic\t<<<" << endl;
+	cout << "2.Your element" << endl;
+	Sleep(500);
+	system("CLS");
+	cout << "How many elements do you want to add: ";
+	Sleep(1000);
+	cout << "5";
+	Sleep(300);
+	cout << "0";
+	Sleep(300);
+	cout << "0";
+	Sleep(300);
+	cout << "0" << endl;
+	Sleep(700);
+	for (int i = 0; i < 5000; i++) auto_add(list);
+	cout << "5000 elements successfuly added)\n";
+	Sleep(1000);
+	system("CLS");
+	cout << "1.Automatic\t<<<" << endl;
+	cout << "2.Your element" << endl;
+	Sleep(500);
+	system("CLS");
+	cout << "1.Add\t<<<" << endl;
+	cout << "2.Save" << endl;
+	cout << "3.Read" << endl;
+	cout << "4.Show" << endl;
+	cout << "5.Search" << endl;
+	cout << "6.Edit" << endl;
+	cout << "7.Delete" << endl;
+	Sleep(500);
+	system("CLS");
+	cout << "1.Add" << endl;
+	cout << "2.Save\t<<<" << endl;
+	cout << "3.Read" << endl;
+	cout << "4.Show" << endl;
+	cout << "5.Search" << endl;
+	cout << "6.Edit" << endl;
+	cout << "7.Delete" << endl;
+	Sleep(500);
+	system("CLS");
+	cout << "1.Save in .txt\t<<<" << endl;
+	cout << "2.Save in .bin" << endl;
+	Sleep(500);
+	txt_save(list);
+	Sleep(500);
+	system("CLS");
+	cout << "1.Save in .txt" << endl;
+	cout << "2.Save in .bin\t<<<" << endl;
+	Sleep(500);
+	bin_save(list);
+	Sleep(500);
+	system("CLS");
+	cout << "1.Add" << endl;
+	cout << "2.Save\t<<<" << endl;
+	cout << "3.Read" << endl;
+	cout << "4.Show" << endl;
+	cout << "5.Search" << endl;
+	cout << "6.Edit" << endl;
+	cout << "7.Delete" << endl;
+	Sleep(500);
+	system("CLS");
+	cout << "1.Add" << endl;
+	cout << "2.Save" << endl;
+	cout << "3.Read\t<<<" << endl;
+	cout << "4.Show" << endl;
+	cout << "5.Search" << endl;
+	cout << "6.Edit" << endl;
+	cout << "7.Delete" << endl;
+	Sleep(500);
+	system("CLS");
+	cout << "1.Read from .txt\t<<<" << endl;
+	cout << "2.Read from .bin" << endl;
+	Sleep(500);
+	txt_read(list);
+	Sleep(500);
+	system("CLS");
+	cout << "1.Read from .txt" << endl;
+	cout << "2.Read from .bin\t<<<" << endl;
+	Sleep(500);
+	bin_read(list);
+	Sleep(500);
+	system("CLS");
+	cout << "1.Add" << endl;
+	cout << "2.Save" << endl;
+	cout << "3.Read\t<<<" << endl;
+	cout << "4.Show" << endl;
+	cout << "5.Search" << endl;
+	cout << "6.Edit" << endl;
+	cout << "7.Delete" << endl;
+	Sleep(500);
+	system("CLS");
+	cout << "1.Add" << endl;
+	cout << "2.Save" << endl;
+	cout << "3.Read" << endl;
+	cout << "4.Show\t<<<" << endl;
+	cout << "5.Search" << endl;
+	cout << "6.Edit" << endl;
+	cout << "7.Delete" << endl;
+	Sleep(500);
+	show(list);
+	Sleep(2000);
+	system("CLS");
+	cout << "1.Add" << endl;
+	cout << "2.Save" << endl;
+	cout << "3.Read" << endl;
+	cout << "4.Show\t<<<" << endl;
+	cout << "5.Search" << endl;
+	cout << "6.Edit" << endl;
+	cout << "7.Delete" << endl;
+	Sleep(500);
+	system("CLS");
+	cout << "1.Add" << endl;
+	cout << "2.Save" << endl;
+	cout << "3.Read" << endl;
+	cout << "4.Show" << endl;
+	cout << "5.Search<<<" << endl;
+	cout << "6.Edit" << endl;
+	cout << "7.Delete" << endl;
+	Sleep(500);
+	system("CLS");
+	char name[40];
+	char mira[40];
+	float min, max;
+	date made;
+	for (int i = 0; i < 40; i++)
+	{
+		name[i] = '\0';
+		mira[i] = '\0';
+	}
+	name[0] = 'q';
+	mira[0] = 'w';
+	min = 20;
+	max = 180;
+	made.day = 27;
+	made.month = 7;
+	made.year = 2019;
+	cout << "Name: ";
+	Sleep(500);
+	cout << name << endl;
+	Sleep(500);
+	cout << "Count\nMin: ";
+	Sleep(500);
+	cout << min << endl;
+	Sleep(500);
+	cout << "Max: ";
+	Sleep(500);
+	cout << max << endl;
+	Sleep(500);
+	cout << "Mira: ";
+	Sleep(500);
+	cout << mira << endl;
+	Sleep(500);
+	cout << "Max date of mading\nDay: ";
+	Sleep(500);
+	cout << made.day << endl;
+	Sleep(500);
+	cout << "Month: ";
+	Sleep(500);
+	cout << made.month << endl;
+	Sleep(500);
+	cout << "Year: ";
+	Sleep(500);
+	cout << made.year << endl;
+	Sleep(500);
+	search(list, name, mira, min, max, made);
+	Sleep(2000);
+
+	system("CLS");
+	cout << "1.Add" << endl;
+	cout << "2.Save" << endl;
+	cout << "3.Read" << endl;
+	cout << "4.Show" << endl;
+	cout << "5.Search<<<" << endl;
+	cout << "6.Edit" << endl;
+	cout << "7.Delete" << endl;
+	Sleep(500);
+	system("CLS");
+	cout << "1.Add" << endl;
+	cout << "2.Save" << endl;
+	cout << "3.Read" << endl;
+	cout << "4.Show" << endl;
+	cout << "5.Search" << endl;
+	cout << "6.Edit\t<<<" << endl;
+	cout << "7.Delete" << endl;
+	Sleep(500);
+	system("CLS");
+	cout << "Insert ID of element You want to edit: ";
+	Sleep(500);
+	cout << "4";
+	Sleep(200);
+	cout << "7";
+	Sleep(200);
+	cout << "6" << endl;
+	Sleep(500);
+
+	system("CLS");
+	printf("%i\t%s\t%f\t%s\t%d.%d.%d\t%d:%d\t%d\t%d\n", list[475].id, list[475].name,
+		list[475].count, list[475].mira, list[475].made.day, list[475].made.month, list[475].made.year,
+		list[475].made.hour, list[475].made.min, list[475].term, list[475].shop_id);
+
+	cout << "What do you want to edit: " << endl;
+
+	cout << "1.Name" << "\t<<<" << endl;
+	cout << "2.Count" << endl;
+	cout << "3.Mira" << endl;
+	cout << "4.Day of production" << endl;
+	cout << "5.Month of production" << endl;
+	cout << "6.Year of production" << endl;
+	cout << "7.Hour of production" << endl;
+	cout << "8.Minutes of production" << endl;
+	cout << "9.Shelf life" << endl;
+	cout << "10.Shop ID" << endl;
+	Sleep(500);
+	system("CLS");
+	printf("%i\t%s\t%f\t%s\t%d.%d.%d\t%d:%d\t%d\t%d\n", list[475].id, list[475].name,
+		list[475].count, list[475].mira, list[475].made.day, list[475].made.month, list[475].made.year,
+		list[475].made.hour, list[475].made.min, list[475].term, list[475].shop_id);
+
+	cout << "What do you want to edit: " << endl;
+
+	cout << "1.Name" << endl;
+	cout << "2.Count" << "\t<<<" << endl;
+	cout << "3.Mira" << endl;
+	cout << "4.Day of production" << endl;
+	cout << "5.Month of production" << endl;
+	cout << "6.Year of production" << endl;
+	cout << "7.Hour of production" << endl;
+	cout << "8.Minutes of production" << endl;
+	cout << "9.Shelf life" << endl;
+	cout << "10.Shop ID" << endl;
+	Sleep(500);
+	cout << "Count: ";
+	Sleep(500);
+	cout << "1";
+	Sleep(200);
+	cout << "3";
+	Sleep(200);
+	cout << "7" << endl;
+	list[475].count = 137;
+	Sleep(500);
+	cout << "Successfully)" << endl;
+	Sleep(500);
+	system("CLS");
+	cout << "1.Add" << endl;
+	cout << "2.Save" << endl;
+	cout << "3.Read" << endl;
+	cout << "4.Show" << endl;
+	cout << "5.Search" << endl;
+	cout << "6.Edit\t<<<" << endl;
+	cout << "7.Delete" << endl;
+	Sleep(500);
+	system("CLS");
+	cout << "1.Add" << endl;
+	cout << "2.Save" << endl;
+	cout << "3.Read" << endl;
+	cout << "4.Show" << endl;
+	cout << "5.Search" << endl;
+	cout << "6.Edit" << endl;
+	cout << "7.Delete\t<<<" << endl;
+	Sleep(500);
+	system("CLS");
+	cout << "Insert ID of element You want to delete: ";
+	Sleep(500);
+	cout << "4";
+	Sleep(200);
+	cout << "9";
+	Sleep(200);
+	cout << "9";
+	Sleep(200);
+	cout << "9"<<endl;
+	Sleep(500);
+	list.erase(list.begin() + 4998);
+
+	for (int i = 4998; i < list.size(); i++)
+	{
+		list[i].id--;
+	}
+
+	cout << "Successfully)" << endl;
+
+
+
+	cout << endl << "Demonstration mode is completed)" << endl 
+		<<"Demonstration database is saved in memory,"<<endl
+		<<" you can work with it in interactive mode";
+	_getch();
+	system("CLS");
+	return start_demo(list);
 }
 
 void start_bench(vector<tovar>& list)
@@ -673,7 +978,7 @@ void inter_menu_show(vector<tovar>& list)
 void show(vector<tovar>& list)
 {
 	if (list.size() == 0) cout << "List is empty..." << endl;
-	else for (int i = 0; i < list.size(); ++i)
+	else for (int i = 0; i < list.size(); i++)
 	{
 		printf("%i\t%s\t%f\t%s\t%d.%d.%d\t%d:%d\t%d\t%d\n", list[i].id, list[i].name,
 			list[i].count, list[i].mira, list[i].made.day, list[i].made.month, list[i].made.year,
@@ -726,7 +1031,7 @@ void search_menu(vector<tovar>& list)
 		char mira[40];
 		float min, max;
 		date made;
-		for (int i = 0; i < 40; ++i)
+		for (int i = 0; i < 40; i++)
 		{
 			name[i] = '\0';
 			mira[i] = '\0';
@@ -775,7 +1080,7 @@ void search_menu(vector<tovar>& list)
 void search(vector<tovar>& list, char name[40], char mira[40], float min, float max, date made)
 {
 	bool one = 1;
-	for (int i = 0; i < list.size(); ++i)
+	for (int i = 0; i < list.size(); i++)
 	{
 		if (part_in_word(name, list[i].name) && part_in_word(mira, list[i].mira) && list[i].count <= max && list[i].count >= min)
 		{
@@ -812,7 +1117,7 @@ void search(vector<tovar>& list, char name[40], char mira[40], float min, float 
 bool part_in_word(char part[40], char word[40])
 {
 	bool res = 1;
-	for (int i = 0; i < strlen(part); ++i)
+	for (int i = 0; i < strlen(part); i++)
 	{
 		if (part[i] != word[i]) res = 0;
 	}
@@ -863,7 +1168,7 @@ void edit_menu(vector<tovar>& list)
 		int id;
 		cout << "Insert ID of element You want to edit: ";
 		scanf("%d", &id);
-		--id;
+		id--;
 		if (id < 0 || id>list.size() - 1) {
 			cout << "Not found..." << endl;
 			return inter_menu_edit(list);
@@ -894,7 +1199,7 @@ void edit_menu(vector<tovar>& list)
 				key = _getch();
 				if (key == 224) {
 					key = _getch();
-					if (key == 72) --foo;
+					if (key == 72) foo--;
 					else if (key == 80) ++foo;
 				}
 				else if (key == 13)
@@ -1040,7 +1345,7 @@ void delete_menu(vector<tovar>& list)
 		int id;
 		cout << "Insert ID of element You want to delete: ";
 		scanf("%d", &id);
-		--id;
+		id--;
 		if (id < 0 || id>list.size() - 1) {
 			cout << "Not found..." << endl;
 			return inter_menu_delete(list);
@@ -1049,9 +1354,9 @@ void delete_menu(vector<tovar>& list)
 		{
 			list.erase(list.begin() + id);
 
-			for (int i = id; i < list.size(); ++i)
+			for (int i = id; i < list.size(); i++)
 			{
-				--list[i].id;
+				list[i].id--;
 			}
 
 			cout << "Successfully)" << endl;
