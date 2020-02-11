@@ -1,6 +1,4 @@
 #include <iostream>
-#include <fstream>
-#include <sstream>
 #include <conio.h>
 #include <vector>
 #include <Windows.h>
@@ -98,10 +96,14 @@ bool part_in_word(char part[40], char word[40]);
 void delete_menu(vector<tovar>& list);
 void edit_menu(vector<tovar>& list);
 void demo_mode(vector<tovar>& list);
+void bench_mode(vector<tovar>& list);
+void txt_bench(vector<tovar>& list, int num);
+void bin_bench(vector<tovar>& list, int num);
 
 int main()
 {
 	vector<tovar> list;
+
 	start_inter(list);
 
 	return 0;
@@ -641,7 +643,7 @@ void demo_mode(vector<tovar>& list)
 	Sleep(200);
 	cout << "9";
 	Sleep(200);
-	cout << "9"<<endl;
+	cout << "9" << endl;
 	Sleep(500);
 	list.erase(list.begin() + 4998);
 
@@ -654,9 +656,9 @@ void demo_mode(vector<tovar>& list)
 
 
 
-	cout << endl << "Demonstration mode is completed)" << endl 
-		<<"Demonstration database is saved in memory,"<<endl
-		<<" you can work with it in interactive mode";
+	cout << endl << "Demonstration mode is completed)" << endl
+		<< "Demonstration database is saved in memory," << endl
+		<< " you can work with it in interactive mode";
 	_getch();
 	system("CLS");
 	return start_demo(list);
@@ -684,7 +686,7 @@ void start_bench(vector<tovar>& list)
 
 		}
 		else if (key == 13) {
-			//system("CLS");bench_menu();
+			system("CLS"); return bench_mode(list);
 		}
 		else if (key == 27) {
 			return;
@@ -1366,3 +1368,91 @@ void delete_menu(vector<tovar>& list)
 	return inter_menu_delete(list);
 }
 
+void bench_mode(vector<tovar>& list)
+{
+	system("CLS");
+	int txtt, bint, num, d;
+	num = 10;
+	txtt = 0;
+	bint = 0;
+	FILE* f = fopen("benchmark.txt", "w");
+	fprintf(f, "Count\ttxt\tbin\n");
+
+	while (txtt < 10000 || bint < 10000)
+	{
+		txtt = -(int)GetTickCount64();
+		txt_bench(list, num);
+		txtt += (int)GetTickCount64();
+
+		bint = -(int)GetTickCount64();
+		bin_bench(list, num);
+		bint += (int)GetTickCount64();
+
+		fprintf(f, "%d\t%05d\t%05d\n", num, txtt, bint);
+
+		if (bint < 1000 || txtt < 1000)
+		{
+			num += num;
+			d = num;
+		}
+		else
+		{
+			num += d;
+		}
+	}
+	fclose(f);
+	cout << endl << "Benchmark is completed," << endl << "you can find benchmark info in benchmark.txt in project`s folder" << endl;
+	_getch();
+	system("CLS");
+	return start_bench(list);
+}
+
+void txt_bench(vector<tovar>& list, int num)
+{
+	list.clear();
+	char name[40];
+	char mira[40];
+	float min, max;
+	date made;
+	for (int i = 0; i < 40; i++)
+	{
+		name[i] = '\0';
+		mira[i] = '\0';
+	}
+	name[0] = 'q';
+	mira[0] = 'w';
+	min = 20;
+	max = 180;
+	made.day = 27;
+	made.month = 7;
+	made.year = 2019;
+	for (int i = 0; i < num; i++) auto_add(list);
+	txt_save(list);
+	txt_read(list);
+	search(list, name, mira, min, max, made);
+}
+
+void bin_bench(vector<tovar>& list, int num)
+{
+	list.clear();
+	char name[40];
+	char mira[40];
+	float min, max;
+	date made;
+	for (int i = 0; i < 40; i++)
+	{
+		name[i] = '\0';
+		mira[i] = '\0';
+	}
+	name[0] = 'q';
+	mira[0] = 'w';
+	min = 20;
+	max = 180;
+	made.day = 27;
+	made.month = 7;
+	made.year = 2019;
+	for (int i = 0; i < num; i++) auto_add(list);
+	bin_save(list);
+	bin_read(list);
+	search(list, name, mira, min, max, made);
+}
