@@ -7,9 +7,9 @@ void txt_save(vector<tovar>& list)
 	else {
 		for (int i = 0; i < list.size(); i++)
 		{
-			fprintf(f, "%i\t%s\t%f\t%s\t%d.%d.%d\t%d:%d\t%d\t%d\n", list[i].id, list[i].name,
-				list[i].count, list[i].mira, list[i].made.day, list[i].made.month, list[i].made.year,
-				list[i].made.hour, list[i].made.min, list[i].term, list[i].shop_id);
+			fprintf(f, "%i\t%s\t%f\t%s\t%d.%d.%d\t%d:%d\t%d\n", list[i].id, list[i].name,
+				list[i].count, list[i].mira, list[i].made.tm_mday, list[i].made.tm_mon, list[i].made.tm_year,
+				list[i].made.tm_hour, list[i].made.tm_min, list[i].term);
 		}
 		cout << "Successfuly)\n";
 	}
@@ -41,12 +41,11 @@ void auto_add(vector<tovar>& list)
 	}
 	elem.count = (double)(rand() % 200) + (double)(rand() % 100) / 100;
 	elem.term = rand() % 3650;
-	elem.made.day = rand() % 31 + 1;
-	elem.made.hour = rand() % 24;
-	elem.made.min = rand() % 60;
-	elem.made.month = rand() % 12 + 1;
-	elem.made.year = 2010 + rand() % 11;
-	elem.shop_id = rand() % 10000;
+	elem.made.tm_mday = rand() % 31 + 1;
+	elem.made.tm_hour = rand() % 24;
+	elem.made.tm_min = rand() % 60;
+	elem.made.tm_mon = rand() % 12 + 1;
+	elem.made.tm_year = 2010 + rand() % 11;
 	elem.id = list.size() + 1;
 	list.push_back(elem);
 }
@@ -59,9 +58,9 @@ void txt_read(vector<tovar>& list)
 	if (feof(f)) cout << "File is empty(" << endl;
 	while (!feof(f))
 	{
-		fscanf(f, "%i\t%s\t%f\t%s\t%d.%d.%d\t%d:%d\t%d\t%d\n", &elem.id, &elem.name,
-			&elem.count, &elem.mira, &elem.made.day, &elem.made.month, &elem.made.year,
-			&elem.made.hour, &elem.made.min, &elem.term, &elem.shop_id);
+		fscanf(f, "%i\t%s\t%f\t%s\t%d.%d.%d\t%d:%d\t%d\n", &elem.id, &elem.name,
+			&elem.count, &elem.mira, &elem.made.tm_mday, &elem.made.tm_mon, &elem.made.tm_year,
+			&elem.made.tm_hour, &elem.made.tm_min, &elem.term);
 		list.push_back(elem);
 	}
 	cout << "Successfuly)\n";
@@ -91,40 +90,40 @@ void show(vector<tovar>& list)
 	if (list.size() == 0) cout << "List is empty..." << endl;
 	else for (int i = 0; i < list.size(); i++)
 	{
-		printf("%i\t%s\t%f\t%s\t%d.%d.%d\t%d:%d\t%d\t%d\n", list[i].id, list[i].name,
-			list[i].count, list[i].mira, list[i].made.day, list[i].made.month, list[i].made.year,
-			list[i].made.hour, list[i].made.min, list[i].term, list[i].shop_id);
+		printf("%i\t%s\t%f\t%s\t%d.%d.%d\t%d:%d\t%d\n", list[i].id, list[i].name,
+			list[i].count, list[i].mira, list[i].made.tm_mday, list[i].made.tm_mon, list[i].made.tm_year,
+			list[i].made.tm_hour, list[i].made.tm_min, list[i].term);
 	}
 }
 
-void search(vector<tovar>& list, char name[40], char mira[40], float min, float max, date made)
+void search(vector<tovar>& list, char name[40], char mira[40], float min, float max, tm made)
 {
 	bool one = 1;
 	for (int i = 0; i < list.size(); i++)
 	{
 		if (part_in_word(name, list[i].name) && part_in_word(mira, list[i].mira) && list[i].count <= max && list[i].count >= min)
 		{
-			if (list[i].made.year < made.year) {
-				printf("%i\t%s\t%f\t%s\t%d.%d.%d\t%d:%d\t%d\t%d\n", list[i].id, list[i].name,
-					list[i].count, list[i].mira, list[i].made.day, list[i].made.month, list[i].made.year,
-					list[i].made.hour, list[i].made.min, list[i].term, list[i].shop_id);
+			if (list[i].made.tm_year < made.tm_year) {
+				printf("%i\t%s\t%f\t%s\t%d.%d.%d\t%d:%d\t%d\n", list[i].id, list[i].name,
+					list[i].count, list[i].mira, list[i].made.tm_mday, list[i].made.tm_mon, list[i].made.tm_year,
+					list[i].made.tm_hour, list[i].made.tm_min, list[i].term);
 				one = 0;
 			}
-			else if (list[i].made.year == made.year)
+			else if (list[i].made.tm_year == made.tm_year)
 			{
-				if (list[i].made.month < made.month) {
-					printf("%i\t%s\t%f\t%s\t%d.%d.%d\t%d:%d\t%d\t%d\n", list[i].id, list[i].name,
-						list[i].count, list[i].mira, list[i].made.day, list[i].made.month, list[i].made.year,
-						list[i].made.hour, list[i].made.min, list[i].term, list[i].shop_id);
+				if (list[i].made.tm_mon < made.tm_mon) {
+					printf("%i\t%s\t%f\t%s\t%d.%d.%d\t%d:%d\t%d\n", list[i].id, list[i].name,
+						list[i].count, list[i].mira, list[i].made.tm_mday, list[i].made.tm_mon, list[i].made.tm_year,
+						list[i].made.tm_hour, list[i].made.tm_min, list[i].term);
 					one = 0;
 				}
-				else if (list[i].made.month == made.month)
+				else if (list[i].made.tm_mon == made.tm_mon)
 				{
-					if (list[i].made.day <= made.day)
+					if (list[i].made.tm_mday <= made.tm_mday)
 					{
-						printf("%i\t%s\t%f\t%s\t%d.%d.%d\t%d:%d\t%d\t%d\n", list[i].id, list[i].name,
-							list[i].count, list[i].mira, list[i].made.day, list[i].made.month, list[i].made.year,
-							list[i].made.hour, list[i].made.min, list[i].term, list[i].shop_id);
+						printf("%i\t%s\t%f\t%s\t%d.%d.%d\t%d:%d\t%d\n", list[i].id, list[i].name,
+							list[i].count, list[i].mira, list[i].made.tm_mday, list[i].made.tm_mon, list[i].made.tm_year,
+							list[i].made.tm_hour, list[i].made.tm_min, list[i].term);
 						one = 0;
 					}
 				}
@@ -150,7 +149,7 @@ void txt_bench(vector<tovar>& list, int num)
 	char name[40];
 	char mira[40];
 	float min, max;
-	date made;
+	tm made;
 	for (int i = 0; i < 40; i++)
 	{
 		name[i] = '\0';
@@ -160,9 +159,9 @@ void txt_bench(vector<tovar>& list, int num)
 	mira[0] = 'w';
 	min = 20;
 	max = 180;
-	made.day = 27;
-	made.month = 7;
-	made.year = 2019;
+	made.tm_mday = 27;
+	made.tm_mon = 7;
+	made.tm_year = 2019;
 	for (int i = 0; i < num; i++) auto_add(list);
 	txt_save(list);
 	txt_read(list);
@@ -175,7 +174,7 @@ void bin_bench(vector<tovar>& list, int num)
 	char name[40];
 	char mira[40];
 	float min, max;
-	date made;
+	tm made;
 	for (int i = 0; i < 40; i++)
 	{
 		name[i] = '\0';
@@ -185,9 +184,9 @@ void bin_bench(vector<tovar>& list, int num)
 	mira[0] = 'w';
 	min = 20;
 	max = 180;
-	made.day = 27;
-	made.month = 7;
-	made.year = 2019;
+	made.tm_mday = 27;
+	made.tm_mon = 7;
+	made.tm_year = 2019;
 	for (int i = 0; i < num; i++) auto_add(list);
 	bin_save(list);
 	bin_read(list);

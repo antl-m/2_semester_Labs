@@ -1,15 +1,16 @@
 ﻿  Lab_1_2020_Malibroda.cpp
   menu_funcs.cpp
-C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_1_2020_Malibroda\Lab_1_2020_Malibroda\menu_funcs.cpp(494,23): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_1_2020_Malibroda\Lab_1_2020_Malibroda\menu_funcs.cpp(925,19): warning C4018: '>': signed/unsigned mismatch
-C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_1_2020_Malibroda\Lab_1_2020_Malibroda\menu_funcs.cpp(1102,19): warning C4018: '>': signed/unsigned mismatch
-C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_1_2020_Malibroda\Lab_1_2020_Malibroda\menu_funcs.cpp(1110,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_1_2020_Malibroda\Lab_1_2020_Malibroda\menu_funcs.cpp(480,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_1_2020_Malibroda\Lab_1_2020_Malibroda\menu_funcs.cpp(911,19): warning C4018: '>': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_1_2020_Malibroda\Lab_1_2020_Malibroda\menu_funcs.cpp(1078,19): warning C4018: '>': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_1_2020_Malibroda\Lab_1_2020_Malibroda\menu_funcs.cpp(1086,23): warning C4018: '<': signed/unsigned mismatch
   other_funcs.cpp
 C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_1_2020_Malibroda\Lab_1_2020_Malibroda\other_funcs.cpp(8,21): warning C4018: '<': signed/unsigned mismatch
 C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_1_2020_Malibroda\Lab_1_2020_Malibroda\other_funcs.cpp(24,25): warning C4018: '<': signed/unsigned mismatch
 C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_1_2020_Malibroda\Lab_1_2020_Malibroda\other_funcs.cpp(42,38): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_1_2020_Malibroda\Lab_1_2020_Malibroda\other_funcs.cpp(92,25): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_1_2020_Malibroda\Lab_1_2020_Malibroda\other_funcs.cpp(103,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_1_2020_Malibroda\Lab_1_2020_Malibroda\other_funcs.cpp(140,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_1_2020_Malibroda\Lab_1_2020_Malibroda\other_funcs.cpp(91,25): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_1_2020_Malibroda\Lab_1_2020_Malibroda\other_funcs.cpp(102,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_1_2020_Malibroda\Lab_1_2020_Malibroda\other_funcs.cpp(139,20): warning C4018: '<': signed/unsigned mismatch
   Generating Code...
+  LINK : C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_1_2020_Malibroda\Debug\Lab_1_2020_Malibroda.exe not found or not built by the last incremental link; performing full link
   Lab_1_2020_Malibroda.vcxproj -> C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_1_2020_Malibroda\Debug\Lab_1_2020_Malibroda.exe

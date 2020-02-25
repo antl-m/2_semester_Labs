@@ -1,7 +1,3 @@
-#include <iostream>
-#include <conio.h>
-#include <vector>
-#include <Windows.h>
 #include "lab_1.h"
 
 void num_add(vector<tovar>& list)
@@ -90,37 +86,37 @@ void user_add(vector<tovar>& list)
 	cout << "Mira: ";
 	cin.getline(elem.mira, 40, '\n');
 	cout << "Date of mading\nDay: ";
-	scanf("%d", &elem.made.day);
+	scanf("%d", &elem.made.tm_mday);
 	cin.ignore(INT64_MAX, '\n');
-	if (elem.made.day <= 0 || elem.made.day >= 32) {
+	if (elem.made.tm_mday <= 0 || elem.made.tm_mday >= 32) {
 		cout << "Bad format...\n";
 		return add_menu_user(list);
 	}
 	cout << "Month: ";
-	scanf("%d", &elem.made.month);
+	scanf("%d", &elem.made.tm_mon);
 	cin.ignore(INT64_MAX, '\n');
-	if (elem.made.month <= 0 || elem.made.month > 12) {
+	if (elem.made.tm_mon <= 0 || elem.made.tm_mon > 12) {
 		cout << "Bad format...\n";
 		return add_menu_user(list);
 	}
 	cout << "Year: ";
-	scanf("%d", &elem.made.year);
+	scanf("%d", &elem.made.tm_year);
 	cin.ignore(INT64_MAX, '\n');
-	if (elem.made.year <= 0) {
+	if (elem.made.tm_year <= 0) {
 		cout << "Bad format...\n";
 		return add_menu_user(list);
 	}
 	cout << "Hour: ";
-	scanf("%d", &elem.made.hour);
+	scanf("%d", &elem.made.tm_hour);
 	cin.ignore(INT64_MAX, '\n');
-	if (elem.made.hour < 0 || elem.made.hour > 23) {
+	if (elem.made.tm_hour < 0 || elem.made.tm_hour > 23) {
 		cout << "Bad format...\n";
 		return add_menu_user(list);
 	}
 	cout << "Minutes: ";
-	scanf("%d", &elem.made.min);
+	scanf("%d", &elem.made.tm_min);
 	cin.ignore(INT64_MAX, '\n');
-	if (elem.made.min < 0 || elem.made.min > 59) {
+	if (elem.made.tm_min < 0 || elem.made.tm_min > 59) {
 		cout << "Bad format...\n";
 		return add_menu_user(list);
 	}
@@ -128,13 +124,6 @@ void user_add(vector<tovar>& list)
 	scanf("%d", &elem.term);
 	cin.ignore(INT64_MAX, '\n');
 	if (elem.term <= 0) {
-		cout << "Bad format...\n";
-		return add_menu_user(list);
-	}
-	cout << "Shop id: ";
-	scanf("%d", &elem.shop_id);
-	cin.ignore(INT64_MAX, '\n');
-	if (elem.shop_id < 0) {
 		cout << "Bad format...\n";
 		return add_menu_user(list);
 	}
@@ -341,7 +330,7 @@ void demo_mode(vector<tovar>& list)
 	char name[40];
 	char mira[40];
 	float min, max;
-	date made;
+	tm made;
 	for (int i = 0; i < 40; i++)
 	{
 		name[i] = '\0';
@@ -351,9 +340,9 @@ void demo_mode(vector<tovar>& list)
 	mira[0] = 'w';
 	min = 20;
 	max = 180;
-	made.day = 27;
-	made.month = 7;
-	made.year = 2019;
+	made.tm_mday = 27;
+	made.tm_mon = 7;
+	made.tm_year = 2019;
 	cout << "Name: ";
 	Sleep(500);
 	cout << name << endl;
@@ -372,19 +361,18 @@ void demo_mode(vector<tovar>& list)
 	Sleep(500);
 	cout << "Max date of mading\nDay: ";
 	Sleep(500);
-	cout << made.day << endl;
+	cout << made.tm_mday << endl;
 	Sleep(500);
 	cout << "Month: ";
 	Sleep(500);
-	cout << made.month << endl;
+	cout << made.tm_mon << endl;
 	Sleep(500);
 	cout << "Year: ";
 	Sleep(500);
-	cout << made.year << endl;
+	cout << made.tm_year << endl;
 	Sleep(500);
 	search(list, name, mira, min, max, made);
 	Sleep(2000);
-
 	system("CLS");
 	cout << "1.Add" << endl;
 	cout << "2.Save" << endl;
@@ -414,9 +402,9 @@ void demo_mode(vector<tovar>& list)
 	Sleep(500);
 
 	system("CLS");
-	printf("%i\t%s\t%f\t%s\t%d.%d.%d\t%d:%d\t%d\t%d\n", list[475].id, list[475].name,
-		list[475].count, list[475].mira, list[475].made.day, list[475].made.month, list[475].made.year,
-		list[475].made.hour, list[475].made.min, list[475].term, list[475].shop_id);
+	printf("%i\t%s\t%f\t%s\t%d.%d.%d\t%d:%d\t%d\n", list[475].id, list[475].name,
+		list[475].count, list[475].mira, list[475].made.tm_mday, list[475].made.tm_mon, list[475].made.tm_year,
+		list[475].made.tm_hour, list[475].made.tm_min, list[475].term);
 
 	cout << "What do you want to edit: " << endl;
 
@@ -429,12 +417,11 @@ void demo_mode(vector<tovar>& list)
 	cout << "7.Hour of production" << endl;
 	cout << "8.Minutes of production" << endl;
 	cout << "9.Shelf life" << endl;
-	cout << "10.Shop ID" << endl;
 	Sleep(500);
 	system("CLS");
-	printf("%i\t%s\t%f\t%s\t%d.%d.%d\t%d:%d\t%d\t%d\n", list[475].id, list[475].name,
-		list[475].count, list[475].mira, list[475].made.day, list[475].made.month, list[475].made.year,
-		list[475].made.hour, list[475].made.min, list[475].term, list[475].shop_id);
+	printf("%i\t%s\t%f\t%s\t%d.%d.%d\t%d:%d\t%d\n", list[475].id, list[475].name,
+		list[475].count, list[475].mira, list[475].made.tm_mday, list[475].made.tm_mon, list[475].made.tm_year,
+		list[475].made.tm_hour, list[475].made.tm_min, list[475].term);
 
 	cout << "What do you want to edit: " << endl;
 
@@ -447,7 +434,6 @@ void demo_mode(vector<tovar>& list)
 	cout << "7.Hour of production" << endl;
 	cout << "8.Minutes of production" << endl;
 	cout << "9.Shelf life" << endl;
-	cout << "10.Shop ID" << endl;
 	Sleep(500);
 	cout << "Count: ";
 	Sleep(500);
@@ -830,7 +816,7 @@ void search_menu(vector<tovar>& list)
 		char name[40];
 		char mira[40];
 		float min, max;
-		date made;
+		tm made;
 		for (int i = 0; i < 40; i++)
 		{
 			name[i] = '\0';
@@ -852,23 +838,23 @@ void search_menu(vector<tovar>& list)
 		cout << "Mira: ";
 		cin.getline(mira, 40, '\n');
 		cout << "Max date of mading\nDay: ";
-		scanf("%d", &made.day);
+		scanf("%d", &made.tm_mday);
 		cin.ignore(INT64_MAX, '\n');
-		if (made.day <= 0 || made.day >= 32) {
+		if (made.tm_mday <= 0 || made.tm_mday >= 32) {
 			cout << "Bad format...\n";
 			return inter_menu_search(list);
 		}
 		cout << "Month: ";
-		scanf("%d", &made.month);
+		scanf("%d", &made.tm_mon);
 		cin.ignore(INT64_MAX, '\n');
-		if (made.month <= 0 || made.month > 12) {
+		if (made.tm_mon <= 0 || made.tm_mon > 12) {
 			cout << "Bad format...\n";
 			return inter_menu_search(list);
 		}
 		cout << "Year: ";
-		scanf("%d", &made.year);
+		scanf("%d", &made.tm_year);
 		cin.ignore(INT64_MAX, '\n');
-		if (made.year <= 0) {
+		if (made.tm_year <= 0) {
 			cout << "Bad format...\n";
 			return inter_menu_search(list);
 		}
@@ -929,26 +915,25 @@ void edit_menu(vector<tovar>& list)
 		else
 		{
 			int key;
-			int foo = 10000000;
+			int foo = 90000000;
 			while (1)
 			{
 				system("CLS");
-				printf("%i\t%s\t%f\t%s\t%d.%d.%d\t%d:%d\t%d\t%d\n", list[id].id, list[id].name,
-					list[id].count, list[id].mira, list[id].made.day, list[id].made.month, list[id].made.year,
-					list[id].made.hour, list[id].made.min, list[id].term, list[id].shop_id);
+				printf("%i\t%s\t%f\t%s\t%d.%d.%d\t%d:%d\t%d\n", list[id].id, list[id].name,
+					list[id].count, list[id].mira, list[id].made.tm_mday, list[id].made.tm_mon, list[id].made.tm_year,
+					list[id].made.tm_hour, list[id].made.tm_min, list[id].term);
 
 				cout << "What do you want to edit: " << endl;
 
-				cout << "1.Name" << ((foo % 10 == 0) ? "\t<<<" : "") << endl;
-				cout << "2.Count" << ((foo % 10 == 1) ? "\t<<<" : "") << endl;
-				cout << "3.Mira" << ((foo % 10 == 2) ? "\t<<<" : "") << endl;
-				cout << "4.Day of production" << ((foo % 10 == 3) ? "\t<<<" : "") << endl;
-				cout << "5.Month of production" << ((foo % 10 == 4) ? "\t<<<" : "") << endl;
-				cout << "6.Year of production" << ((foo % 10 == 5) ? "\t<<<" : "") << endl;
-				cout << "7.Hour of production" << ((foo % 10 == 6) ? "\t<<<" : "") << endl;
-				cout << "8.Minutes of production" << ((foo % 10 == 7) ? "\t<<<" : "") << endl;
-				cout << "9.Shelf life" << ((foo % 10 == 8) ? "\t<<<" : "") << endl;
-				cout << "10.Shop ID" << ((foo % 10 == 9) ? "\t<<<" : "") << endl;
+				cout << "1.Name" << ((foo % 9 == 0) ? "\t<<<" : "") << endl;
+				cout << "2.Count" << ((foo % 9 == 1) ? "\t<<<" : "") << endl;
+				cout << "3.Mira" << ((foo % 9 == 2) ? "\t<<<" : "") << endl;
+				cout << "4.Day of production" << ((foo % 9 == 3) ? "\t<<<" : "") << endl;
+				cout << "5.Month of production" << ((foo % 9 == 4) ? "\t<<<" : "") << endl;
+				cout << "6.Year of production" << ((foo % 9 == 5) ? "\t<<<" : "") << endl;
+				cout << "7.Hour of production" << ((foo % 9 == 6) ? "\t<<<" : "") << endl;
+				cout << "8.Minutes of production" << ((foo % 9 == 7) ? "\t<<<" : "") << endl;
+				cout << "9.Shelf life" << ((foo % 9 == 8) ? "\t<<<" : "") << endl;
 				key = _getch();
 				if (key == 224) {
 					key = _getch();
@@ -965,11 +950,11 @@ void edit_menu(vector<tovar>& list)
 					system("CLS");  return inter_menu_edit(list);
 				}
 			}
-			if (foo % 10 == 0) {
+			if (foo % 9 == 0) {
 				cout << "Name: ";
 				cin.getline(list[id].name, 40, '\n');
 			}
-			else if (foo % 10 == 1) {
+			else if (foo % 9 == 1) {
 				cout << "Count: ";
 				scanf("%f", &list[id].count);
 				cin.ignore(INT64_MAX, '\n');
@@ -978,69 +963,60 @@ void edit_menu(vector<tovar>& list)
 					return inter_menu_edit(list);
 				}
 			}
-			else if (foo % 10 == 2) {
+			else if (foo % 9 == 2) {
 				cout << "Mira: ";
 				cin.getline(list[id].mira, 40, '\n');
 			}
-			else if (foo % 10 == 3) {
+			else if (foo % 9 == 3) {
 				cout << "Day of production: ";
-				scanf("%d", &list[id].made.day);
+				scanf("%d", &list[id].made.tm_mday);
 				cin.ignore(INT64_MAX, '\n');
-				if (list[id].made.day <= 0 || list[id].made.day >= 32) {
+				if (list[id].made.tm_mday <= 0 || list[id].made.tm_mday >= 32) {
 					cout << "Bad format...\n";
 					return inter_menu_edit(list);
 				}
 			}
-			else if (foo % 10 == 4) {
+			else if (foo % 9 == 4) {
 				cout << "Month of production: ";
-				scanf("%d", &list[id].made.month);
+				scanf("%d", &list[id].made.tm_mon);
 				cin.ignore(INT64_MAX, '\n');
-				if (list[id].made.month <= 0 || list[id].made.month > 12) {
+				if (list[id].made.tm_mon <= 0 || list[id].made.tm_mon > 12) {
 					cout << "Bad format...\n";
 					return inter_menu_edit(list);
 				}
 			}
-			else if (foo % 10 == 5) {
+			else if (foo % 9 == 5) {
 				cout << "Year of production: ";
-				scanf("%d", &list[id].made.year);
+				scanf("%d", &list[id].made.tm_year);
 				cin.ignore(INT64_MAX, '\n');
-				if (list[id].made.year <= 0) {
+				if (list[id].made.tm_year <= 0) {
 					cout << "Bad format...\n";
 					return inter_menu_edit(list);
 				}
 			}
-			else if (foo % 10 == 6) {
+			else if (foo % 9 == 6) {
 				cout << "Hour of production: ";
-				scanf("%d", &list[id].made.hour);
+				scanf("%d", &list[id].made.tm_hour);
 				cin.ignore(INT64_MAX, '\n');
-				if (list[id].made.hour < 0 || list[id].made.hour > 23) {
+				if (list[id].made.tm_hour < 0 || list[id].made.tm_hour > 23) {
 					cout << "Bad format...\n";
 					return inter_menu_edit(list);
 				}
 			}
-			else if (foo % 10 == 7) {
+			else if (foo % 9 == 7) {
 				cout << "Minutes: ";
-				scanf("%d", &list[id].made.min);
+				scanf("%d", &list[id].made.tm_min);
 				cin.ignore(INT64_MAX, '\n');
-				if (list[id].made.min < 0 || list[id].made.min > 59) {
+				if (list[id].made.tm_min < 0 || list[id].made.tm_min > 59) {
 					cout << "Bad format...\n";
 					return inter_menu_edit(list);
 				}
 			}
-			else if (foo % 10 == 8) {
+			else if (foo % 9 == 8) {
 				cout << "Shelf life(in days): ";
 				scanf("%d", &list[id].term);
 				cin.ignore(INT64_MAX, '\n');
 				if (list[id].term <= 0) {
-					cout << "Bad format...\n";
-					return inter_menu_edit(list);
-				}
-			}
-			else if (foo % 10 == 9) {
-				cout << "Shop id: ";
-				scanf("%d", &list[id].shop_id);
-				cin.ignore(INT64_MAX, '\n');
-				if (list[id].shop_id < 0) {
 					cout << "Bad format...\n";
 					return inter_menu_edit(list);
 				}
@@ -1122,12 +1098,14 @@ void delete_menu(vector<tovar>& list)
 void bench_mode(vector<tovar>& list)
 {
 	system("CLS");
-	int txtt, bint, num, d;
+	int txtt, bint, binm, txtm, num, d;
 	num = 10;
+	txtm = 0;
 	txtt = 0;
+	binm = 0;
 	bint = 0;
 	FILE* f = fopen("benchmark.txt", "w");
-	fprintf(f, "Count\ttxt\tbin\n");
+	fprintf(f, "Count\t\ttxt(ms)\tbin(ms)\t\ttxt(byte)\tbin(byte)\n");
 
 	while (txtt < 10000 || bint < 10000)
 	{
@@ -1139,7 +1117,17 @@ void bench_mode(vector<tovar>& list)
 		bin_bench(list, num);
 		bint += (int)GetTickCount64();
 
-		fprintf(f, "%d\t%05d\t%05d\n", num, txtt, bint);
+		FILE* t = fopen("database.txt", "r");
+		fseek(t, 0, SEEK_END);
+		txtm=ftell(t);
+		fclose(t);
+
+		FILE* b = fopen("database.bin", "rb");
+		fseek(b, 0, SEEK_END);
+		binm = ftell(b);
+		fclose(b);
+
+		fprintf(f, "%07d\t\t%05d\t%05d\t\t%08d\t%08d\n", num, txtt, bint, txtm, binm);
 
 		if (bint < 1000 || txtt < 1000)
 		{
