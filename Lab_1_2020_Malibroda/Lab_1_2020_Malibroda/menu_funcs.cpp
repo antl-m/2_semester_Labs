@@ -1104,18 +1104,23 @@ void bench_mode(vector<tovar>& list)
 	txtt = 0;
 	binm = 0;
 	bint = 0;
+	d = 0;
 	FILE* f = fopen("benchmark.txt", "w");
 	fprintf(f, "Count\t\ttxt(ms)\tbin(ms)\t\ttxt(byte)\tbin(byte)\n");
 
+	std::chrono::time_point<std::chrono::system_clock> start, end;
+
 	while (txtt < 10000 || bint < 10000)
 	{
-		txtt = -(int)GetTickCount64();
-		txt_bench(list, num);
-		txtt += (int)GetTickCount64();
+		start = std::chrono::system_clock::now();
+		txt_bench(list, num);	
+		end = std::chrono::system_clock::now();
+		txtt = std::chrono::duration_cast<std::chrono::milliseconds> (end - start).count();
 
-		bint = -(int)GetTickCount64();
+		start = std::chrono::system_clock::now();
 		bin_bench(list, num);
-		bint += (int)GetTickCount64();
+		end = std::chrono::system_clock::now();
+		bint = std::chrono::duration_cast<std::chrono::milliseconds> (end - start).count();
 
 		FILE* t = fopen("database.txt", "r");
 		fseek(t, 0, SEEK_END);
