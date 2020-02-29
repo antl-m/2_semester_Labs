@@ -4,12 +4,12 @@ C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_1_2020_Malibroda\Lab_1_2020
 C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_1_2020_Malibroda\Lab_1_2020_Malibroda\menu_funcs.cpp(911,19): warning C4018: '>': signed/unsigned mismatch
 C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_1_2020_Malibroda\Lab_1_2020_Malibroda\menu_funcs.cpp(1078,19): warning C4018: '>': signed/unsigned mismatch
 C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_1_2020_Malibroda\Lab_1_2020_Malibroda\menu_funcs.cpp(1086,23): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_1_2020_Malibroda\Lab_1_2020_Malibroda\menu_funcs.cpp(1117,83): warning C4244: '=': conversion from '_Rep' to 'int', possible loss of data
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_1_2020_Malibroda\Lab_1_2020_Malibroda\menu_funcs.cpp(1118,83): warning C4244: '=': conversion from '_Rep' to 'int', possible loss of data
           with
           [
               _Rep=__int64
           ]
-C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_1_2020_Malibroda\Lab_1_2020_Malibroda\menu_funcs.cpp(1122,83): warning C4244: '=': conversion from '_Rep' to 'int', possible loss of data
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_1_2020_Malibroda\Lab_1_2020_Malibroda\menu_funcs.cpp(1123,83): warning C4244: '=': conversion from '_Rep' to 'int', possible loss of data
           with
           [
               _Rep=__int64
