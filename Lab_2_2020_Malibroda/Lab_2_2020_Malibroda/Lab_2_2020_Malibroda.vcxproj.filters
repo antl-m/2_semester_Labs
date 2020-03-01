@@ -21,7 +21,7 @@
     <ClCompile Include="Menu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Fixed_arr_menu.cpp">
+    <ClCompile Include="Fixed_arr.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

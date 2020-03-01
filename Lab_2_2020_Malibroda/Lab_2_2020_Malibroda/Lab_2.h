@@ -2,20 +2,11 @@
 #include <iostream>
 #include <vector>
 #include <conio.h>
+#include <time.h>
 
 using namespace std;
 
-enum button { UP = 72, DOWN = 80, ENTER = 13, ESC = 27 , ARROW=224};
-
-/*****Functions' declarations*****/
-
-void start_inter();
-void start_demo();
-void start_bench();
-
-void inter_start_fa();
-void inter_start_al();
-void inter_start_l();
+enum button { UP = 72, DOWN = 80, ENTER = 13, ESC = 27, ARROW = 224 };
 
 /*****Stack classes*****/
 
@@ -35,7 +26,7 @@ private:
 
 public:
 
-	explicit stack_fa(size_t max)
+	explicit stack_fa(int max)
 	{
 		if (max <= 0) {
 			size = 0;
@@ -215,3 +206,30 @@ public:
 		}
 	}
 };
+
+/*****Functions' declarations*****/
+
+void start_inter();
+void start_demo();
+void start_bench();
+
+void inter_start_fa();
+void inter_start_al();
+void inter_start_l();
+
+void fa_menu_create();
+void fa_menu_push(stack_fa<tm>& list);
+void fa_menu_push(stack_fa<tm>& list);
+void fa_menu_pop(stack_fa<tm>& list);
+void fa_menu_peek(stack_fa<tm>& list);
+void fa_menu_is_empty(stack_fa<tm>& list);
+
+void push_menu_auto_fa(stack_fa<tm>& list);
+void push_menu_custom_fa(stack_fa<tm>& list);
+
+void auto_push_menu_fa(stack_fa<tm>& list);
+void custom_push_menu_fa(stack_fa<tm>& list);
+
+void auto_pushing_fa(stack_fa<tm>& list);
+
+void peeking_fa(stack_fa<tm>& list);

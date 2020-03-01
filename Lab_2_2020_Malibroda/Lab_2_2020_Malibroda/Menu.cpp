@@ -28,7 +28,6 @@ void start_inter()
 			return;
 		}
 	}
-
 }
 
 void start_demo()
@@ -113,7 +112,7 @@ void inter_start_fa()
 			}
 		}
 		else if (key == ENTER) {
-			//system("CLS"); return fa_();
+			system("CLS"); return fa_menu_create();
 		}
 		else if (key == ESC) {
 			system("CLS"); return start_inter();
