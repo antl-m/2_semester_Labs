@@ -1,3 +1,18 @@
-﻿  Fixed_arr.cpp
-C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_2_2020_Malibroda\Lab_2_2020_Malibroda\Fixed_arr.cpp(221,24): warning C4018: '<': signed/unsigned mismatch
-  Lab_2_2020_Malibroda.vcxproj -> C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_2_2020_Malibroda\Debug\Lab_2_2020_Malibroda.exe
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(459,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Lab_2_2020_Malibroda.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Menu.cpp
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_2_2020_Malibroda\Lab_2_2020_Malibroda\Menu.cpp(385,87): warning C4244: '=': conversion from '_Rep' to 'int', possible loss of data
+          with
+          [
+              _Rep=__int64
+          ]
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_2_2020_Malibroda\Lab_2_2020_Malibroda\Menu.cpp(390,87): warning C4244: '=': conversion from '_Rep' to 'int', possible loss of data
+          with
+          [
+              _Rep=__int64
+          ]
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_2_2020_Malibroda\Lab_2_2020_Malibroda\Menu.cpp(395,86): warning C4244: '=': conversion from '_Rep' to 'int', possible loss of data
+          with
+          [
+              _Rep=__int64
+          ]
+  Lab_2_2020_Malibroda.vcxproj -> C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_2_2020_Malibroda\Debug\Lab_2a_2020_Malibroda.exe

@@ -1,10 +1,10 @@
-#include "Lab_2.h"
+#include "Lab_2a.h"
 
 void fa_menu_create()
 {
 	cout << "Creating fixed size array for stack" << endl;
 	cout << "Input max size for stack: ";
-	int max=0;
+	int max = 0;
 	scanf("%d", &max);
 
 	try
@@ -12,7 +12,7 @@ void fa_menu_create()
 		stack_fa<tm> list(max);
 		return fa_menu_push(list);
 	}
-	catch (stack_exception& e)
+	catch (stack_exception & e)
 	{
 		system("CLS");
 		cout << e.what() << endl;
@@ -20,7 +20,7 @@ void fa_menu_create()
 	}
 }
 
-void fa_menu_push(stack_fa<tm> & list)
+void fa_menu_push(stack_fa<tm>& list)
 {
 	cout << "1.Push\t<<<" << endl;
 	cout << "2.Pop" << endl;
@@ -75,7 +75,7 @@ void fa_menu_pop(stack_fa<tm>& list)
 
 		}
 		else if (key == ENTER) {
-			//system("CLS"); return pop_menu_fa();
+			poping_fa(list);
 		}
 		else if (key == ESC) {
 			list.~stack_fa();
@@ -139,7 +139,7 @@ void fa_menu_is_empty(stack_fa<tm>& list)
 			}
 		}
 		else if (key == ENTER) {
-			//system("CLS"); return is_empty_menu_fa();
+			is_empty_fa(list);
 		}
 		else if (key == ESC) {
 			list.~stack_fa();
@@ -218,17 +218,66 @@ void auto_push_menu_fa(stack_fa<tm>& list)
 	}
 	else
 	{
-		for (size_t i = 0; i < amount; i++)
+		try
 		{
-			auto_pushing_fa(list);
+			for (size_t i = 0; i < amount; i++)
+			{
+				auto_pushing_fa(list);
+			}
+			cout << "Success" << endl;
 		}
-	}	
+		catch (stack_exception & e)
+		{
+			cout << e.what() << endl;
+			list.~stack_fa();
+			return inter_start_fa();
+		}
+	}
 	return push_menu_auto_fa(list);
 }
 
 void custom_push_menu_fa(stack_fa<tm>& list)
 {
+	tm temp;
+	int field;
+	cout << "Creating your element" << endl;
+	cout << "Input day [1, 31]:";
+	scanf("%d", &field);
+	if (field < 1 || field>31)
+	{
+		cout << "Bad format" << endl;
+		return push_menu_custom_fa(list);
+	}
+	else { temp.tm_mday = field; }
+	cout << "Input month [1, 12]:";
+	scanf("%d", &field);
+	if (field < 1 || field>12)
+	{
+		cout << "Bad format" << endl;
+		return push_menu_custom_fa(list);
+	}
+	else { field--; temp.tm_mon = field; }
+	cout << "Input year (1900+):";
+	scanf("%d", &field);
+	if (field < 1900)
+	{
+		cout << "Bad format" << endl;
+		return push_menu_custom_fa(list);
+	}
+	else { field-=1900; temp.tm_year = field; }
 
+	try
+	{
+		list.push(temp);
+		cout << "Success" << endl;
+	}
+	catch (stack_exception& e)
+	{
+		cout << e.what() << endl;
+		list.~stack_fa();
+		return inter_start_fa();
+	}
+	return push_menu_custom_fa(list);
 }
 
 void auto_pushing_fa(stack_fa<tm>& list)
@@ -244,8 +293,63 @@ void auto_pushing_fa(stack_fa<tm>& list)
 
 void peeking_fa(stack_fa<tm>& list)
 {
-	char* str=new char[40];
-	strftime(str, 40,"%d %B %Y",&(list.peek()));
-	cout << str<<endl;
-	delete[] str;
+	try
+	{
+		char* str = new char[40];
+		strftime(str, 40, "%d %B %Y", &(list.peek()));
+		cout << str << endl;
+		delete[] str;
+	}
+	catch (stack_exception & e)
+	{
+		cout << e.what() << endl;
+		list.~stack_fa();
+		return inter_start_fa();
+	}
+}
+	
+void poping_fa(stack_fa<tm>& list)
+{
+	try
+	{
+		list.pop();
+		cout << "Sucess" << endl;
+	}
+	catch (stack_exception& e)
+	{
+		cout << e.what() << endl;
+		list.~stack_fa();
+		return inter_start_fa();
+	}
+}
+
+void is_empty_fa(stack_fa<tm>& list)
+{
+	try
+	{
+		if(list.is_empty()) cout << "Stack is empty" << endl;
+		else cout << "Stack isn't empty" << endl;
+	}
+	catch (stack_exception & e)
+	{
+		cout << e.what() << endl;
+		list.~stack_fa();
+		return inter_start_fa();
+	}
+}
+
+void fa_bench(size_t num)
+{
+	stack_fa<tm> list(num);
+	list.is_empty();
+	for (size_t i = 0; i < num; i++)
+	{
+		auto_pushing_fa(list);
+	}
+	for (size_t i = 0; i < num; i++)
+	{
+		list.peek();
+		list.pop();
+		list.is_empty();
+	}
 }
