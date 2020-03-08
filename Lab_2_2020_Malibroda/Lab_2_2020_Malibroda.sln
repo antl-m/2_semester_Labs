@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lab_2_2020_Malibroda", "Lab_2_2020_Malibroda\Lab_2_2020_Malibroda.vcxproj", "{0FC08572-D7EB-4F4A-A7F9-98042C3C5E05}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lab_2a_2020_Malibroda", "Lab_2_2020_Malibroda\Lab_2_2020_Malibroda.vcxproj", "{0FC08572-D7EB-4F4A-A7F9-98042C3C5E05}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lab_2b_2020_Malibroda", "Lab_2b_2020_Malibroda\Lab_2b_2020_Malibroda.vcxproj", "{BE51CB57-BC4F-4A27-B3BD-3C0CE8B3CBA5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,14 @@ Global
 		{0FC08572-D7EB-4F4A-A7F9-98042C3C5E05}.Release|x64.Build.0 = Release|x64
 		{0FC08572-D7EB-4F4A-A7F9-98042C3C5E05}.Release|x86.ActiveCfg = Release|Win32
 		{0FC08572-D7EB-4F4A-A7F9-98042C3C5E05}.Release|x86.Build.0 = Release|Win32
+		{BE51CB57-BC4F-4A27-B3BD-3C0CE8B3CBA5}.Debug|x64.ActiveCfg = Debug|x64
+		{BE51CB57-BC4F-4A27-B3BD-3C0CE8B3CBA5}.Debug|x64.Build.0 = Debug|x64
+		{BE51CB57-BC4F-4A27-B3BD-3C0CE8B3CBA5}.Debug|x86.ActiveCfg = Debug|Win32
+		{BE51CB57-BC4F-4A27-B3BD-3C0CE8B3CBA5}.Debug|x86.Build.0 = Debug|Win32
+		{BE51CB57-BC4F-4A27-B3BD-3C0CE8B3CBA5}.Release|x64.ActiveCfg = Release|x64
+		{BE51CB57-BC4F-4A27-B3BD-3C0CE8B3CBA5}.Release|x64.Build.0 = Release|x64
+		{BE51CB57-BC4F-4A27-B3BD-3C0CE8B3CBA5}.Release|x86.ActiveCfg = Release|Win32
+		{BE51CB57-BC4F-4A27-B3BD-3C0CE8B3CBA5}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

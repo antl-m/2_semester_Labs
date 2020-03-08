@@ -6,15 +6,16 @@
 #include <Windows.h>
 #include <chrono>
 
-using namespace std;
+using std::cout;
+using std::endl;
 
 enum button { UP = 72, DOWN = 80, ENTER = 13, ESC = 27, ARROW = 224 };
 
 /*****Stack classes*****/
 
-class stack_exception : public logic_error {
+class stack_exception : public std::logic_error {
 public:
-	explicit stack_exception(const char* message) : logic_error(message) {}
+	explicit stack_exception(const char* message) : std::logic_error(message) {}
 };
 
 template<class T>
@@ -95,7 +96,7 @@ class stack_al /*****array list*****/
 {
 private:
 
-	vector<T> stack;
+	std::vector<T> stack;
 
 public:
 

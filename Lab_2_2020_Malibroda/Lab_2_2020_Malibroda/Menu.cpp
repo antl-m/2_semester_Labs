@@ -364,6 +364,7 @@ void bench_mode()
 	cout << "           pop" << endl;
 	cout << "           is_empty" << endl;
 	system("pause");
+	cout << "It can take a few minutes..." << endl;
 	int fa_time, al_time, l_time, num, d;
 	num = 10;
 	fa_time = 0;
