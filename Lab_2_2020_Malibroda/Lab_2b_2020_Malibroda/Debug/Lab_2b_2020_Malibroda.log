@@ -55,8 +55,8 @@ C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_2_2020_Malibroda\Lab_2b_202
 C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_2_2020_Malibroda\Lab_2b_2020_Malibroda\HAT.cpp(1179,23): warning C4018: '<': signed/unsigned mismatch
 C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_2_2020_Malibroda\Lab_2b_2020_Malibroda\HAT.cpp(1183,23): warning C4018: '<': signed/unsigned mismatch
 C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_2_2020_Malibroda\Lab_2b_2020_Malibroda\HAT.cpp(1185,9): warning C4834: discarding return value of function with 'nodiscard' attribute
-C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_2_2020_Malibroda\Lab_2b_2020_Malibroda\HAT.h(107,17): warning C4018: '>': signed/unsigned mismatch
-C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_2_2020_Malibroda\Lab_2b_2020_Malibroda\HAT.h(101): message : while compiling class template member function 'void HAT<int>::insert(T,size_t)'
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_2_2020_Malibroda\Lab_2b_2020_Malibroda\HAT.h(108,17): warning C4018: '>': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_2_2020_Malibroda\Lab_2b_2020_Malibroda\HAT.h(102): message : while compiling class template member function 'void HAT<int>::insert(T,size_t)'
           with
           [
               T=int
@@ -70,8 +70,8 @@ C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_2_2020_Malibroda\Lab_2b_202
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\chrono(632): message : see reference to class template instantiation 'std::chrono::duration<double,std::ratio<1,1>>' being compiled
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\chrono(178): message : see reference to class template instantiation 'std::chrono::duration<__int64,std::nano>' being compiled
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\chrono(610): message : see reference to class template instantiation 'std::chrono::time_point<std::chrono::steady_clock,std::chrono::nanoseconds>' being compiled
-C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_2_2020_Malibroda\Lab_2b_2020_Malibroda\HAT.h(80,17): warning C4018: '>': signed/unsigned mismatch
-C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_2_2020_Malibroda\Lab_2b_2020_Malibroda\HAT.h(75): message : while compiling class template member function 'void HAT<int>::push_back(T)'
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_2_2020_Malibroda\Lab_2b_2020_Malibroda\HAT.h(81,17): warning C4018: '>': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_2_2020_Malibroda\Lab_2b_2020_Malibroda\HAT.h(76): message : while compiling class template member function 'void HAT<int>::push_back(T)'
           with
           [
               T=int
@@ -81,11 +81,11 @@ C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_2_2020_Malibroda\Lab_2b_202
           [
               T=int
           ]
-C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_2_2020_Malibroda\Lab_2b_2020_Malibroda\HAT.h(67,2): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_2_2020_Malibroda\Lab_2b_2020_Malibroda\HAT.h(66): message : while compiling class template member function 'HAT<int>::~HAT(void)'
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_2_2020_Malibroda\Lab_2b_2020_Malibroda\HAT.h(68,2): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_2_2020_Malibroda\Lab_2b_2020_Malibroda\HAT.h(67): message : while compiling class template member function 'HAT<int>::~HAT(void)'
 C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_2_2020_Malibroda\Lab_2b_2020_Malibroda\HAT.cpp(1074): message : see reference to function template instantiation 'HAT<int>::~HAT(void)' being compiled
-C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_2_2020_Malibroda\Lab_2b_2020_Malibroda\HAT.h(47,11): warning C4018: '>': signed/unsigned mismatch
-C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_2_2020_Malibroda\Lab_2b_2020_Malibroda\HAT.h(44): message : while compiling class template member function 'T &HAT<T>::operator [](int)'
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_2_2020_Malibroda\Lab_2b_2020_Malibroda\HAT.h(48,11): warning C4018: '>': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_2_2020_Malibroda\Lab_2b_2020_Malibroda\HAT.h(45): message : while compiling class template member function 'T &HAT<T>::operator [](int)'
           with
           [
               T=int
@@ -95,8 +95,8 @@ C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_2_2020_Malibroda\Lab_2b_202
           [
               T=int
           ]
-C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_2_2020_Malibroda\Lab_2b_2020_Malibroda\HAT.h(184,14): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_2_2020_Malibroda\Lab_2b_2020_Malibroda\HAT.h(165): message : while compiling class template member function 'int *HAT<tm>::find_all(T)'
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_2_2020_Malibroda\Lab_2b_2020_Malibroda\HAT.h(185,14): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_2_2020_Malibroda\Lab_2b_2020_Malibroda\HAT.h(166): message : while compiling class template member function 'int *HAT<tm>::find_all(T)'
           with
           [
               T=tm
@@ -107,9 +107,11 @@ C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_2_2020_Malibroda\Lab_2b_202
               T=tm
           ]
 C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_2_2020_Malibroda\Lab_2b_2020_Malibroda\HAT.cpp(28): message : see reference to class template instantiation 'HAT<tm>' being compiled
-C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_2_2020_Malibroda\Lab_2b_2020_Malibroda\HAT.h(21,26): warning C4244: 'initializing': conversion from 'double' to 'unsigned int', possible loss of data
-C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_2_2020_Malibroda\Lab_2b_2020_Malibroda\HAT.h(19): message : while compiling class template member function 'void HAT<int>::increase(void)'
-C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_2_2020_Malibroda\Lab_2b_2020_Malibroda\HAT.h(105): message : see reference to function template instantiation 'void HAT<int>::increase(void)' being compiled
-C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_2_2020_Malibroda\Lab_2b_2020_Malibroda\HAT.h(32,2): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_2_2020_Malibroda\Lab_2b_2020_Malibroda\HAT.h(200): warning C4172: returning address of local variable or temporary: res
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_2_2020_Malibroda\Lab_2b_2020_Malibroda\HAT.h(22,26): warning C4244: 'initializing': conversion from 'double' to 'unsigned int', possible loss of data
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_2_2020_Malibroda\Lab_2b_2020_Malibroda\HAT.h(20): message : while compiling class template member function 'void HAT<int>::increase(void)'
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_2_2020_Malibroda\Lab_2b_2020_Malibroda\HAT.h(106): message : see reference to function template instantiation 'void HAT<int>::increase(void)' being compiled
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_2_2020_Malibroda\Lab_2b_2020_Malibroda\HAT.h(33,2): warning C4018: '<': signed/unsigned mismatch
+  Lab_2b_2020_Malibroda.cpp
+  Generating Code...
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_2_2020_Malibroda\Lab_2b_2020_Malibroda\HAT.h(201): warning C4172: returning address of local variable or temporary: res
   Lab_2b_2020_Malibroda.vcxproj -> C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_2_2020_Malibroda\Debug\Lab_2b_2020_Malibroda.exe

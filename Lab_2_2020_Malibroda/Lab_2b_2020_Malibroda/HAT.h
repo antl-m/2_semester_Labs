@@ -1,4 +1,5 @@
 #pragma once
+
 #include<iostream>
 
 class HAT_exception : public std::logic_error

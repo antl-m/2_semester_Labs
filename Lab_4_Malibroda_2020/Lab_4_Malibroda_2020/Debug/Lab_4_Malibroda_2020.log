@@ -1,0 +1,6 @@
+﻿  Lab_4_Malibroda_2020.cpp
+  Lab_4_menu.cpp
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_4_Malibroda_2020\Lab_4_Malibroda_2020\Lab_4_menu.cpp(462,24): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_4_Malibroda_2020\Lab_4_Malibroda_2020\Lab_4_menu.cpp(534,24): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
+  Lab_4_Malibroda_2020.vcxproj -> C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_4_Malibroda_2020\Debug\Lab_4_Malibroda_2020.exe
