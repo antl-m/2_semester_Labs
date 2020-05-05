@@ -1,32 +1,29 @@
-﻿  3a_menu.cpp
-C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_3_Malibroda_2020\Lab_3a_Malibroda_2020\3a_menu.cpp(66,23): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_3_Malibroda_2020\Lab_3a_Malibroda_2020\3a_menu.cpp(75,23): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_3_Malibroda_2020\Lab_3a_Malibroda_2020\3a_menu.cpp(80,23): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_3_Malibroda_2020\Lab_3a_Malibroda_2020\3a_menu.cpp(85,23): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_3_Malibroda_2020\Lab_3a_Malibroda_2020\3a_menu.cpp(90,23): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_3_Malibroda_2020\Lab_3a_Malibroda_2020\3a_menu.cpp(95,23): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_3_Malibroda_2020\Lab_3a_Malibroda_2020\3a_menu.cpp(100,23): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_3_Malibroda_2020\Lab_3a_Malibroda_2020\3a_menu.cpp(227,90): warning C4244: '=': conversion from '_Rep' to 'size_t', possible loss of data
+﻿  Lab_3a_Malibroda_2020.cpp
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_3_Malibroda_2020\Lab_3a_Malibroda_2020\Lab_3a_Malibroda_2020.cpp(14,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  3a_menu.cpp
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_3_Malibroda_2020\Lab_3a_Malibroda_2020\3a_menu.cpp(64,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_3_Malibroda_2020\Lab_3a_Malibroda_2020\3a_menu.cpp(73,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_3_Malibroda_2020\Lab_3a_Malibroda_2020\3a_menu.cpp(78,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_3_Malibroda_2020\Lab_3a_Malibroda_2020\3a_menu.cpp(83,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_3_Malibroda_2020\Lab_3a_Malibroda_2020\3a_menu.cpp(88,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_3_Malibroda_2020\Lab_3a_Malibroda_2020\3a_menu.cpp(93,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_3_Malibroda_2020\Lab_3a_Malibroda_2020\3a_menu.cpp(98,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_3_Malibroda_2020\Lab_3a_Malibroda_2020\3a_menu.cpp(225,90): warning C4244: '=': conversion from '_Rep' to 'size_t', possible loss of data
           with
           [
               _Rep=__int64
           ]
 C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_3_Malibroda_2020\Lab_3a_Malibroda_2020\Lab_3a.h(115,28): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_3_Malibroda_2020\Lab_3a_Malibroda_2020\3a_menu.cpp(88): message : see reference to function template instantiation 'void merge_sort<std::string>(T *,size_t)' being compiled
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_3_Malibroda_2020\Lab_3a_Malibroda_2020\3a_menu.cpp(86): message : see reference to function template instantiation 'void merge_sort<std::string>(T *,size_t)' being compiled
           with
           [
               T=std::string
           ]
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\chrono(632): message : see reference to class template instantiation 'std::chrono::duration<double,std::ratio<1,1>>' being compiled
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\chrono(178): message : see reference to class template instantiation 'std::chrono::duration<__int64,std::nano>' being compiled
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\chrono(610): message : see reference to class template instantiation 'std::chrono::time_point<std::chrono::steady_clock,std::chrono::nanoseconds>' being compiled
 C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_3_Malibroda_2020\Lab_3a_Malibroda_2020\Lab_3a.h(117,21): warning C4018: '<': signed/unsigned mismatch
 C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_3_Malibroda_2020\Lab_3a_Malibroda_2020\Lab_3a.h(125,14): warning C4018: '>': signed/unsigned mismatch
 C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_3_Malibroda_2020\Lab_3a_Malibroda_2020\Lab_3a.h(127,16): warning C4018: '>=': signed/unsigned mismatch
 C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_3_Malibroda_2020\Lab_3a_Malibroda_2020\Lab_3a.h(129,18): warning C4018: '<': signed/unsigned mismatch
 C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_3_Malibroda_2020\Lab_3a_Malibroda_2020\Lab_3a.h(140,21): warning C4018: '<': signed/unsigned mismatch
-  Lab_3a_Malibroda_2020.cpp
-C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_3_Malibroda_2020\Lab_3a_Malibroda_2020\Lab_3a_Malibroda_2020.cpp(14,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   my_menu.cpp
   Generating Code...
   Lab_3a_Malibroda_2020.vcxproj -> C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_3_Malibroda_2020\Debug\Lab_3a_Malibroda_2020.exe

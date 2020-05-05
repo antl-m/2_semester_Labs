@@ -1,0 +1,8 @@
+﻿  Lab_5_Malibroda_2020.cpp
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020.cpp(20,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020.cpp(37,11): warning C4244: 'initializing': conversion from '_Rep' to 'int', possible loss of data
+          with
+          [
+              _Rep=__int64
+          ]
+  Lab_5_Malibroda_2020.vcxproj -> C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Debug\Lab_5_Malibroda_2020.exe

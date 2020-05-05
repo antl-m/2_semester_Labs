@@ -1,0 +1,20 @@
+﻿  interface.cpp
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\interface.cpp(92,78): warning C4244: '=': conversion from '_Rep' to 'int', possible loss of data
+          with
+          [
+              _Rep=__int64
+          ]
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\interface.cpp(97,78): warning C4244: '=': conversion from '_Rep' to 'int', possible loss of data
+          with
+          [
+              _Rep=__int64
+          ]
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\interface.cpp(352,28): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\interface.cpp(367,26): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\interface.cpp(368,27): warning C4018: '<': signed/unsigned mismatch
+  Generating code
+  1 of 563 functions ( 0.2%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    58 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  Lab_5_Malibroda_2020.vcxproj -> C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Release\Lab_5_Malibroda_2020.exe
