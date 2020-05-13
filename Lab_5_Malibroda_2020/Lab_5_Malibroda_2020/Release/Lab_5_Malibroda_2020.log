@@ -1,20 +1,118 @@
-﻿  interface.cpp
-C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\interface.cpp(92,78): warning C4244: '=': conversion from '_Rep' to 'int', possible loss of data
+﻿  Lab_5_Malibroda_2020.cpp
+  MyGraph.cpp
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(29,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(38,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(63,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(69,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(70,24): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(96,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(118,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(134,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(137,24): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(148,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(149,24): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(151,26): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(154,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(158,26): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(168,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(192,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(201,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(223,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(228,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(229,24): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(230,25): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(237,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(238,24): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(253,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(268,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(284,24): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(298,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(307,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(330,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(331,24): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(347,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(383,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(391,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(419,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(425,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(426,24): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(461,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(472,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(483,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(484,24): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(486,26): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(489,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(493,26): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(507,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(511,26): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(515,26): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(543,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(572,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(594,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(599,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(600,24): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(601,25): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(608,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(609,24): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(624,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(639,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(668,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(699,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(700,24): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(716,23): warning C4018: '<': signed/unsigned mismatch
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\xstddef(240,54): warning C4018: '<': signed/unsigned mismatch
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\xstddef(239): message : while compiling class template member function 'bool std::less<void>::operator ()<int&,const _Ty&>(_Ty1,_Ty2) noexcept(<expr>) const'
+          with
+          [
+              _Ty=size_t,
+              _Ty1=int &,
+              _Ty2=const size_t &
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\algorithm(2861): message : see reference to function template instantiation '_FwdIt std::lower_bound<_FwdIt,_Ty,std::less<void>>(_FwdIt,const _FwdIt,const _Ty &,_Pr)' being compiled
+          with
+          [
+              _FwdIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<int>>>,
+              _Ty=size_t,
+              _Pr=std::less<void>
+          ]
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\MyGraph.cpp(512): message : see reference to function template instantiation '_FwdIt std::lower_bound<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,size_t>(_FwdIt,_FwdIt,const unsigned int &)' being compiled
+          with
+          [
+              _FwdIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<int>>>,
+              _Ty=int
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\xstddef(242,43): warning C4018: '<': signed/unsigned mismatch
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\xutility(5126): message : see reference to function template instantiation 'bool std::less<void>::operator ()<int&,const _Ty&>(_Ty1,_Ty2) noexcept const' being compiled
+          with
+          [
+              _Ty=size_t,
+              _Ty1=int &,
+              _Ty2=const size_t &
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\algorithm(2861): message : see reference to function template instantiation '_FwdIt std::lower_bound<_FwdIt,_Ty,std::less<void>>(_FwdIt,const _FwdIt,const _Ty &,_Pr)' being compiled
+          with
+          [
+              _FwdIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<int>>>,
+              _Ty=size_t,
+              _Pr=std::less<void>
+          ]
+  interface.cpp
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\interface.cpp(103,88): warning C4244: '=': conversion from '_Rep' to 'int', possible loss of data
           with
           [
               _Rep=__int64
           ]
-C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\interface.cpp(97,78): warning C4244: '=': conversion from '_Rep' to 'int', possible loss of data
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\interface.cpp(108,88): warning C4244: '=': conversion from '_Rep' to 'int', possible loss of data
           with
           [
               _Rep=__int64
           ]
-C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\interface.cpp(352,28): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\interface.cpp(367,26): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\interface.cpp(368,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\interface.cpp(363,28): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\interface.cpp(378,26): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Lab_5_Malibroda_2020\interface.cpp(379,27): warning C4018: '<': signed/unsigned mismatch
   Generating code
-  1 of 563 functions ( 0.2%) were compiled, the rest were copied from previous compilation.
+  0 of 563 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    58 functions had inline decision re-evaluated but remain unchanged
+    0 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   Lab_5_Malibroda_2020.vcxproj -> C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_5_Malibroda_2020\Release\Lab_5_Malibroda_2020.exe

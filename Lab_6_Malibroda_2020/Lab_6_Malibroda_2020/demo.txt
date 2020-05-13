@@ -1,0 +1,56 @@
+linked
+rand 10
+type
+insert demo
+find demo
+find a z
+erase demo
+print
+foreach demo
+print
+del
+array
+rand 10
+type
+insert demo
+find demo
+find a z
+erase demo
+print
+foreach demo
+print
+del
+bintree
+rand 10
+type
+insert demo
+find demo
+find a z
+erase demo
+print
+foreach demo
+print
+del
+avltree
+rand 10
+type
+insert demo
+find demo
+find a z
+erase demo
+print
+foreach demo
+print
+del
+tree23
+rand 10
+type
+insert demo
+find demo
+find a z
+erase demo
+print
+foreach demo
+print
+del
+exit

@@ -1,0 +1,9 @@
+﻿  SortedList.cpp
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_6_Malibroda_2020\Lab_6_Malibroda_2020\SortedList.cpp(16,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_6_Malibroda_2020\Lab_6_Malibroda_2020\SortedList.cpp(24,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_6_Malibroda_2020\Lab_6_Malibroda_2020\SortedList.cpp(144,27): warning C4018: '>': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_6_Malibroda_2020\Lab_6_Malibroda_2020\SortedList.cpp(152,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_6_Malibroda_2020\Lab_6_Malibroda_2020\SortedList.cpp(157,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_6_Malibroda_2020\Lab_6_Malibroda_2020\SortedList.cpp(171,26): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_6_Malibroda_2020\Lab_6_Malibroda_2020\SortedList.cpp(421): warning C4715: 'AVL_node_insert': not all control paths return a value
+  Lab_6_Malibroda_2020.vcxproj -> C:\Users\Antl_M\Documents\GitHub\2_semester_Labs\Lab_6_Malibroda_2020\Debug\Lab_6_Malibroda_2020.exe

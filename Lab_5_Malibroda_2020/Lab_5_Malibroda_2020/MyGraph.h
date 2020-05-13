@@ -74,8 +74,7 @@ public:
 	friend LinkedGraph ToLinked(const MatrixGraph& arg);
 };
 
-class LinkedGraph :public MyGraph
-{
+class LinkedGraph :public MyGraph {
 private:
 	std::vector<int>* link_struct = nullptr;
 	int n = 0;
